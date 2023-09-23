@@ -1,0 +1,47 @@
+To run command - php spark serve 
+1- http://localhost:8080/api/register
+   method -post
+   [{"key":"name","value":"pragya"},
+   {"key":"email","value":"pray46@gmail.com"},
+   {"key":"password","value":"pragy2345"},
+   {"key":"confirm_password","value":"pragy2345"
+   ]
+   
+   Note : Hi Developer After Register you will to login and copy Generated output and put
+         inside header's value two parameter as given bellow for 2 - 7th API.
+   [{"key":"Authorization","value":"Bearer token"}]
+   
+ 2- http://localhost:8080/api/login
+    method - post
+    
+    [{"key":"email","value":"shubham123@gmail.com"},
+   {"key":"password","value":"shubham12345"},
+   ]
+   
+ 3- http://localhost:8080/api/userspost
+    method - get
+    all posts of each user as per logedin
+    
+ 4- http://localhost:8080/api/addpost
+    Method - post 
+    [{"key":"title","value":"what java"},
+    {"key":"description","value":"breif intro"},
+    {"key":"file","value":{"0":{}}}]  - type : file
+    
+    
+ 5- http://localhost:8080/api/editpost/2
+    method - get
+    
+ 6- http://localhost:8080/api/updatepost
+    method - Post          
+    
+    [{"key":"post_id","value":"2",},
+    {"key":"title","value":"what is Middleware"},
+    {"key":"description","value":"brief intro"},
+    {"key":"file","value":{"0":{}}}] - type : file
+    
+  7- http://localhost:8080/api/removepost/3
+     method - get  
+     
+     
+      
